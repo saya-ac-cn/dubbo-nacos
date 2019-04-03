@@ -6,16 +6,11 @@ package ac.cn.saya.service;
 import ac.cn.saya.entity.StorageEntity;
 import ac.cn.saya.mapper.StorageMapper;
 import ac.cn.saya.service.provider2.IStorageService;
-import ac.cn.saya.tools.DatabaseUtils;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.alibaba.fescar.core.context.RootContext;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.transaction.annotation.Isolation;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 
 /**
  * 库存服务接口实现
@@ -27,7 +22,6 @@ import java.sql.PreparedStatement;
  * @Description:
  */
 @Service(version="${dubbo.provider.version}")
-@Transactional(isolation = Isolation.READ_COMMITTED, readOnly = true, rollbackFor=Exception.class)
 public class StorageServiceImpl implements IStorageService {
 
     @Resource

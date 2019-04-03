@@ -6,16 +6,11 @@ package ac.cn.saya.service;
 import ac.cn.saya.entity.OrderEntity;
 import ac.cn.saya.mapper.OrderMapper;
 import ac.cn.saya.service.provider1.IOderService;
-import ac.cn.saya.tools.DatabaseUtils;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.alibaba.fescar.core.context.RootContext;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.transaction.annotation.Isolation;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 
 /**
  * @Title: OrderServiceImpl
@@ -26,7 +21,6 @@ import java.sql.PreparedStatement;
  * @Description:
  */
 @Service(version="${dubbo.provider.version}")
-@Transactional(isolation = Isolation.READ_COMMITTED, readOnly = true, rollbackFor=Exception.class)
 public class OrderServiceImpl implements IOderService {
 
     @Resource
