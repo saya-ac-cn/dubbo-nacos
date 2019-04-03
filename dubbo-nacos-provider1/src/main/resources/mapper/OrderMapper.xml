@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ac.cn.saya.mapper.OrderMapper">
+
+    <!--创建订单-->
+    <!-- useGeneratedKeys="true" 表示给主键设置自增长,keyProperty="id"  表示将自增长后的Id赋值给实体类中的userId字段-->
+    <insert id="create" useGeneratedKeys="true" keyProperty="id" parameterType="ac.cn.saya.entity.OrderEntity" >
+        INSERT INTO `order_tbl` ( `user_id`, `commodity_code`, `count`, `money`) VALUES(#{userId},#{commodityCode},#{count},#{money})
+    </insert>
+
+
+</mapper>

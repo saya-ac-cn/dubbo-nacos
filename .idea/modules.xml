@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dubbo-nacos.iml" filepath="$PROJECT_DIR$/dubbo-nacos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-nacos-api/dubbo-nacos-api.iml" filepath="$PROJECT_DIR$/dubbo-nacos-api/dubbo-nacos-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-nacos-consumer/dubbo-nacos-consumer.iml" filepath="$PROJECT_DIR$/dubbo-nacos-consumer/dubbo-nacos-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-nacos-provider1/dubbo-nacos-provider1.iml" filepath="$PROJECT_DIR$/dubbo-nacos-provider1/dubbo-nacos-provider1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-nacos-provider2/dubbo-nacos-provider2.iml" filepath="$PROJECT_DIR$/dubbo-nacos-provider2/dubbo-nacos-provider2.iml" />
+    </modules>
+  </component>
+</project>
